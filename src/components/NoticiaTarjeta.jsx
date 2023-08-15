@@ -7,10 +7,11 @@ const NoticiaTarjeta = ({ noticia }) => {
       style={{ width: "18rem" }}
       className="container text-center bg-dark text-light mt-3"
     >
+      <Card.Img variant="top" src={noticia.url} alt={noticia.title} />
       <Card.Body>
         <Card.Title>{noticia.author}</Card.Title>
         <Card.Title>{noticia.title}</Card.Title>
-        <Card.Title>{noticia.urlToImage}</Card.Title>
+
         <Card.Text>{noticia.content}</Card.Text>
         <Card.Text>{noticia.description}</Card.Text>
         <Card.Text>{noticia.publishedAt}</Card.Text>

@@ -16,7 +16,7 @@ function App() {
   const consultarApi = async () => {
     try {
       const respuesta = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=${country}&from=2023-08-12&to=2023-08-12&sortBy=${categoria}domains=techcrunch.com,thenextweb.com&apiKey=41dab2aea4c447d6b9bd5929c9a11659`
+        `https://newsapi.org/v2/top-headlines?country=${country}&from=2023-08-12&to=2023-08-12&sortBy=${categoria}&apiKey=41dab2aea4c447d6b9bd5929c9a11659`
       );
       const dato = await respuesta.json();
       setNoticias(dato.articles);
@@ -29,7 +29,7 @@ function App() {
     setCategoria(e.target.value);
   };
   const selectorCountry = (e) => {
-    setCountry(e.traget.value);
+    setCountry(e.target.value);
   };
   return (
     <>
