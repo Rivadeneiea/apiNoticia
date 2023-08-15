@@ -14,8 +14,6 @@ const NoticiaTarjeta = ({ noticia }) => {
 
         <Card.Text>{noticia.content}</Card.Text>
         <Card.Text>{noticia.description}</Card.Text>
-        <Card.Text>{noticia.publishedAt}</Card.Text>
-        <Card.Text>{noticia.source.title}</Card.Text>
       </Card.Body>
     </Card>
   );
